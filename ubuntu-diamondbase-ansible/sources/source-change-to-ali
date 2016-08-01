@@ -1,0 +1,5 @@
+#!/bin/bash
+mv /etc/apt/sources.list /etc/apt/sources.list.local
+cp /sources/sources.list.ali /etc/apt/sources.list
+echo "need to refres apt lib if you wanna install something when you are running the container"
+#apt-get -q update
