@@ -1,0 +1,7 @@
+#!/bin/bash
+IMGNAME=node
+IMGVERSION=6.3
+#IMGVERSION=5.12
+#IMGVERSION=4.4.7
+docker build -t localreg:5000/$IMGNAME:$IMGVERSION .
+

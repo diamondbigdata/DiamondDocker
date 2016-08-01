@@ -1,0 +1,6 @@
+#!/bin/bash
+mv /etc/apt/sources.list /etc/apt/sources.list.orig
+cp /sources/sources.list.local /etc/apt/sources.list
+echo "192.168.1.55    localreg" >> /etc/hosts
+echo "refres apt lib"
+apt-get -q update
